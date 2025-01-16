@@ -54,7 +54,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 24px 0;
+
   flex-grow: 1;
 }
 .navigation {
@@ -71,6 +71,8 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-right: 76px;
+  padding: 24px 0;
+  display: block;
 }
 .logostudio {
   color: #2e2f42;
@@ -80,8 +82,10 @@ a {
   color: #2e2f42;
   font-weight: 500;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0;
+  display: block;
 }
 .navigation .navigation-link:hover,
 .navigation .navigation-link:focus {
@@ -95,7 +99,6 @@ address {
 .contact {
   display: flex;
   gap: 40px;
-  padding: 24px 0;
 }
 .contact .contact-link {
   color: #434455;
@@ -103,6 +106,8 @@ address {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0;
+  display: block;
 }
 .contact .contact-link:hover,
 .contact .contact-link:focus {
@@ -178,9 +183,9 @@ button {
   color: #2e2f42;
   font-weight: 500;
   font-size: 20px;
-  line-height: 120%;
+  line-height: 1.2;
   letter-spacing: 0.02em;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 .section-two-text {
   color: #434455;
@@ -197,7 +202,7 @@ button {
 .team-two {
   font-weight: 700;
   font-size: 36px;
-  line-height: 111%;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
@@ -210,6 +215,7 @@ button {
 }
 .team-item {
   background-color: #ffffff;
+  width: calc((100% - 72px) / 4);
 }
 
 .team-card {
@@ -224,16 +230,16 @@ button {
   color: #2e2f42;
   font-weight: 500;
   font-size: 20px;
-  line-height: 120%;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: center;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 .team-text {
   color: #434455;
   font-weight: 400;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
 }
@@ -241,7 +247,6 @@ button {
 /* our portfolio */
 .portfolio {
   background-color: #ffffff;
-  border-bottom: 1px solid #e7e9fc;
 }
 .portfolio-list {
   display: flex;
@@ -253,9 +258,8 @@ button {
   width: calc((100% - 48px) / 3);
 }
 .portfolio-card {
-  padding-top: 32px;
-  padding-left: 16px;
-  margin-bottom: 8px;
+  padding: 32px 16px;
+
   box-sizing: border-box;
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
@@ -264,7 +268,7 @@ button {
 .portfolio-two {
   font-weight: 700;
   font-size: 36px;
-  line-height: 111%;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
@@ -274,15 +278,15 @@ button {
 .portfolio-title {
   font-weight: 500;
   font-size: 20px;
-  line-height: 120%;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 .portfolio-text {
   font-weight: 400;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
 }
@@ -292,7 +296,10 @@ button {
   background-color: #2e2f42;
   padding: 100px 0;
 }
-
+.logoweb-footer {
+  padding: 16px 0;
+  display: block;
+}
 .footer-studio {
   color: #f4f4fd;
 }
@@ -300,8 +307,8 @@ button {
   color: #f4f4fd;
   font-weight: 400;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   max-width: 264px;
-  margin-top: 16px;
+  /* margin-top: 16px; */
 }
