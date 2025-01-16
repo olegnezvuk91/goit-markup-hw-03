@@ -300,7 +300,8 @@ button {
   padding: 100px 0;
 }
 .logoweb-footer {
-  padding-bottom: 16px;
+  padding: 0;
+  margin-bottom: 16px;
   display: inline-block;
 }
 .footer-studio {
