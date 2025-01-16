@@ -4,14 +4,64 @@ body {
   background-color: #ffffff;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
+
 a {
   text-decoration: none;
 }
 
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.section-pading {
+  padding: 120px 0;
+}
+
 /* header */
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.page-header {
+  box-sizing: border-box;
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.paage-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 24px 0;
+  flex-grow: 1;
+}
+.navigation {
+  display: flex;
+  gap: 40px;
+}
+
 .logoweb {
   font-family: 'Raleway', sans-serif;
   color: #4d5ae5;
@@ -20,6 +70,7 @@ a {
   line-height: 117%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 .logostudio {
   color: #2e2f42;
@@ -40,11 +91,17 @@ a {
 address {
   font-style: normal;
 }
+
+.contact {
+  display: flex;
+  gap: 40px;
+  padding: 24px 0;
+}
 .contact .contact-link {
   color: #434455;
   font-weight: 400;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.02em;
 }
 .contact .contact-link:hover,
@@ -53,6 +110,10 @@ address {
 }
 
 /* main */
+.section-pading-one {
+  padding: 188px 0;
+}
+
 .section-one {
   background-color: #2e2f42;
 }
@@ -60,24 +121,31 @@ address {
   color: #ffffff;
   font-weight: 700;
   font-size: 56px;
-  line-height: 107%;
+  line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
+  max-width: 496px;
+  padding-bottom: 48px;
+  margin: 0 auto;
 }
 button {
   cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .btn-item {
   color: #ffffff;
+  font-family: 'Roboto', sans-serif;
   background-color: #4d5ae5;
   font-weight: 500;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.04em;
+  padding: 16px 32px;
+  margin: 0 auto;
+  display: block;
 }
-.btn-item:hover {
-  background-color: #404bbf;
-}
+.btn-item:hover,
 .btn-item:focus {
   background-color: #404bbf;
 }
@@ -86,19 +154,40 @@ button {
 .section-two {
   background-color: #ffffff;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.section-two-list {
+  display: flex;
+  gap: 24px;
+}
+
+.section-two-item {
+  width: calc((100% - 72px) / 4);
+}
 .section-two-title {
   color: #2e2f42;
   font-weight: 500;
   font-size: 20px;
   line-height: 120%;
   letter-spacing: 0.02em;
+  padding-bottom: 8px;
 }
 .section-two-text {
   color: #434455;
   font-weight: 400;
   font-size: 16px;
-  line-height: 150%;
-  letter-spacing: 0.02em;
+  line-height: 1.5;
+  letter-spacing: 0.019em;
 }
 
 /* our team */
@@ -113,10 +202,24 @@ button {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 .team-list {
+  display: flex;
+  gap: 24px;
+}
+.team-item {
   background-color: #ffffff;
 }
+
+.team-card {
+  padding: 32px 16px;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
 .team-title {
   color: #2e2f42;
   font-weight: 500;
@@ -124,6 +227,7 @@ button {
   line-height: 120%;
   letter-spacing: 0.02em;
   text-align: center;
+  padding-bottom: 8px;
 }
 .team-text {
   color: #434455;
@@ -137,6 +241,25 @@ button {
 /* our portfolio */
 .portfolio {
   background-color: #ffffff;
+  border-bottom: 1px solid #e7e9fc;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  row-gap: 48px;
+}
+.portfolio-item {
+  width: calc((100% - 48px) / 3);
+}
+.portfolio-card {
+  padding-top: 32px;
+  padding-left: 16px;
+  margin-bottom: 8px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
 }
 .portfolio-two {
   font-weight: 700;
@@ -146,6 +269,7 @@ button {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 .portfolio-title {
   font-weight: 500;
@@ -153,6 +277,7 @@ button {
   line-height: 120%;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding-bottom: 8px;
 }
 .portfolio-text {
   font-weight: 400;
@@ -165,7 +290,9 @@ button {
 /* footer*/
 .footer {
   background-color: #2e2f42;
+  padding: 100px 0;
 }
+
 .footer-studio {
   color: #f4f4fd;
 }
@@ -175,4 +302,6 @@ button {
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.02em;
+  max-width: 264px;
+  margin-top: 16px;
 }
