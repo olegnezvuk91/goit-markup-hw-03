@@ -130,8 +130,7 @@ address {
   letter-spacing: 0.02em;
   text-align: center;
   max-width: 496px;
-  padding-bottom: 48px;
-  margin: 0 auto;
+  margin: 0 auto 48px;
 }
 button {
   cursor: pointer;
@@ -314,5 +313,4 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   max-width: 264px;
-  /* margin-top: 16px; */
 }
